@@ -50,7 +50,7 @@ install(EXPORT c_hash_tableTargets
 
 # Generate package configuration and version files.
 configure_package_config_file(
-    "${CMAKE_CURRENT_SOURCE_DIR}/cmake/c_hash_tableConfig.cmake.in"
+    "${CMAKE_CURRENT_SOURCE_DIR}/cmake/c_hash_tableConfig.cmake"
     "${CMAKE_CURRENT_BINARY_DIR}/c_hash_tableConfig.cmake"
     INSTALL_DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/c_hash_table"
 )

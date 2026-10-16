@@ -53,10 +53,10 @@ void hash_table_destroy(hash_table_t *ht)
 {
     if (ht)
     {
-        if (ht->entries)
+        entry_t *tmp = ht->entries;
+        while (tmp)
         {
-            free(ht->entries);
-            ht->entries = NULL;
+            tmp = entry_delete(tmp);
         }
 
         free(ht);
